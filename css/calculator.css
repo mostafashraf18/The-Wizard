@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#app_calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108vh;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.calculator{
+    border: 2px solid #6c78ea;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 375px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    justify-content: space-evenly;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.display{
+    min-height: 150px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:#22252d;
+    text-align: right;
+    flex:1 1 0%;
+    background: white;
+    border: 2px solid #6c78ea;
+    margin: 10px;
+    border-radius: 10px;
+}
+.display .input{
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+
+}
+.display .output{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.keys{
+    background-color: rgb(103 137 194 / 52%);
+    padding: 25px;
+    border-radius: 1.5rem 1.5rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    box-shadow: 0px -2px 16px rgb(164 181 212);
+}
+.keys .key{
+    display: block;
+    position:relative;
+    cursor: pointer;
+    height: 0;
+    padding-top: 100%;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    transition: 0.02s;
+    user-select: none;
+}
+.keys .key span{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:  2rem;
+    font-weight: 700;
+    color: #19547b;
+}
+.keys .key:hover{
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.keys .key.actions span{
+    color:#25d1b2
+    
+}
+.keys .key.actions svg{
+    fill:#25d1b2;
+}
+.operator svg{
+    fill:#eb6666;
+}
+.operator span{
+    color:#eb6666; 
+}
+#brackets,
+#percent svg{
+    color:#25d1b2;
+    fill:#25d1b2;
+    font-weight: bold;
+}
+#brackets span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: m;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

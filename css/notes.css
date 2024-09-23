@@ -1,0 +1,30 @@
+.inputs{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    outline: none;
+    border-radius: 10px;
+}
+.inputs:focus-visible {
+    outline: 2px solid #571094;
+    border-radius: 3px;
+}
+.inputs img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor:pointer;
+    background: #fff;
+}
+.inputs img:hover{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    padding: 2px;
+}

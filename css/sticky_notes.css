@@ -1,0 +1,31 @@
+.container h2{
+    margin-bottom: 20px;
+}
+.sticky_NOTE{
+   
+    padding: 24px;
+    gap: 24px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    border-color: #cf9aff;
+    border-style: solid;
+    border-width: 5px;
+}
+.sticky{
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    font-family:sans-serif;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.sticky:focus-visible {
+    outline: 2px solid #571094;
+    border-radius: 3px;
+}
